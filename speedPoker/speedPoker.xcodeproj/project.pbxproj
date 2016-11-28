@@ -405,6 +405,7 @@
 				7DB291061DEBA57600C5A9E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7DB291081DEBA57600C5A9E5 /* Build configuration list for PBXNativeTarget "speedPoker" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +414,7 @@
 				7DB2910A1DEBA57600C5A9E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
