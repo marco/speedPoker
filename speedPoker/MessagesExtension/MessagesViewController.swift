@@ -29,18 +29,23 @@ class MessagesViewController: MSMessagesAppViewController {
     override func didResignActive(with conversation: MSConversation) {
     }
 
-    override func didReceive(_ message: MSMessage, conversation: MSConversation) {
+    override func didReceive(_ message: MSMessage,
+            conversation: MSConversation) {
     }
 
-    override func didStartSending(_ message: MSMessage, conversation: MSConversation) {
+    override func didStartSending(_ message: MSMessage,
+            conversation: MSConversation) {
     }
 
-    override func didCancelSending(_ message: MSMessage, conversation: MSConversation) {
+    override func didCancelSending(_ message: MSMessage,
+            conversation: MSConversation) {
     }
     
-    override func willTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
+    override func willTransition(
+            to presentationStyle: MSMessagesAppPresentationStyle) {
     }
     
-    override func didTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
+    override func didTransition(
+            to presentationStyle: MSMessagesAppPresentationStyle) {
     }
 }
