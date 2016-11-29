@@ -6,8 +6,18 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Arvo-Bold.ttf">
+            <string>Arvo-Bold</string>
+        </array>
+        <array key="Arvo-BoldItalic.ttf">
+            <string>Arvo-BoldItalic</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Messages View Controller-->
         <scene sceneID="7MM-of-jgj">
@@ -21,17 +31,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1e-fi-ked">
-                                <rect key="frame" x="116" y="254" width="88.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woodgrain" translatesAutoresizingMaskIntoConstraints="NO" id="djb-GK-GN1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="speedPoker" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.01" translatesAutoresizingMaskIntoConstraints="NO" id="fMD-rb-V80">
+                                <rect key="frame" x="16" y="126.5" width="288" height="105.5"/>
+                                <fontDescription key="fontDescription" name="Arvo-BoldItalic" family="Arvo" pointSize="75"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="3" height="3"/>
                             </label>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaH-v1-kna">
+                                <rect key="frame" x="96" y="232" width="128" height="64"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YaH-v1-kna" secondAttribute="height" multiplier="2:1" id="KWD-dg-abj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arvo-Bold" family="Arvo" pointSize="75"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOE-if-OuS">
+                                <rect key="frame" x="96" y="316" width="128" height="64"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OOE-if-OuS" secondAttribute="height" multiplier="2:1" id="sNv-vk-4F4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arvo-Bold" family="Arvo" pointSize="75"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="Learn">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="d1e-fi-ked" secondAttribute="centerY" id="H0s-hz-dDP"/>
-                            <constraint firstAttribute="centerX" secondItem="d1e-fi-ked" secondAttribute="centerX" id="wFy-hW-Bib"/>
+                            <constraint firstItem="fMD-rb-V80" firstAttribute="height" secondItem="djb-GK-GN1" secondAttribute="height" multiplier="0.2" id="0A7-T8-N35"/>
+                            <constraint firstItem="OOE-if-OuS" firstAttribute="top" secondItem="YaH-v1-kna" secondAttribute="bottom" constant="20" id="56f-vh-BfD"/>
+                            <constraint firstAttribute="bottom" secondItem="djb-GK-GN1" secondAttribute="bottom" id="Bag-xs-cgW"/>
+                            <constraint firstItem="YaH-v1-kna" firstAttribute="top" secondItem="fMD-rb-V80" secondAttribute="bottom" id="E9Q-Yj-ard"/>
+                            <constraint firstItem="YaH-v1-kna" firstAttribute="centerY" secondItem="djb-GK-GN1" secondAttribute="centerY" id="M6E-hx-eVl"/>
+                            <constraint firstItem="YaH-v1-kna" firstAttribute="width" secondItem="djb-GK-GN1" secondAttribute="width" multiplier="0.4" id="Nm1-lo-Mfv"/>
+                            <constraint firstAttribute="trailing" secondItem="djb-GK-GN1" secondAttribute="trailing" id="X7K-uA-chk"/>
+                            <constraint firstItem="YaH-v1-kna" firstAttribute="centerX" secondItem="djb-GK-GN1" secondAttribute="centerX" id="b6z-Sz-0Fu"/>
+                            <constraint firstItem="djb-GK-GN1" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="bgD-Zo-h6x"/>
+                            <constraint firstItem="OOE-if-OuS" firstAttribute="leading" secondItem="djb-GK-GN1" secondAttribute="trailing" constant="-224" id="eBc-fT-2aX"/>
+                            <constraint firstItem="fMD-rb-V80" firstAttribute="width" secondItem="djb-GK-GN1" secondAttribute="width" multiplier="0.9" id="j2u-6L-Typ"/>
+                            <constraint firstItem="fMD-rb-V80" firstAttribute="centerX" secondItem="djb-GK-GN1" secondAttribute="centerX" id="rOl-h4-cxd"/>
+                            <constraint firstItem="djb-GK-GN1" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="top" id="us7-fA-HLr"/>
+                            <constraint firstItem="OOE-if-OuS" firstAttribute="width" secondItem="djb-GK-GN1" secondAttribute="width" multiplier="0.4" id="znu-fg-scT"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -39,6 +92,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.59999999999999" y="136.73163418290855"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="woodgrain" width="1920" height="1920"/>
+    </resources>
 </document>

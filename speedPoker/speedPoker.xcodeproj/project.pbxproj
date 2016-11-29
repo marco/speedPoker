@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D0490B51DED1E330008349E /* Arvo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D0490B11DED1E330008349E /* Arvo-Bold.ttf */; };
+		7D0490B61DED1E330008349E /* Arvo-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D0490B21DED1E330008349E /* Arvo-BoldItalic.ttf */; };
+		7D0490B71DED1E330008349E /* Arvo-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D0490B31DED1E330008349E /* Arvo-Italic.ttf */; };
+		7D0490B81DED1E330008349E /* Arvo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D0490B41DED1E330008349E /* Arvo-Regular.ttf */; };
 		7DB290EC1DEBA57600C5A9E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DB290EB1DEBA57600C5A9E5 /* Assets.xcassets */; };
 		7DB290F31DEBA57600C5A9E5 /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7DB290F21DEBA57600C5A9E5 /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7DB290F81DEBA57600C5A9E5 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB290F71DEBA57600C5A9E5 /* Messages.framework */; };
@@ -40,6 +44,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7D0490B11DED1E330008349E /* Arvo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arvo-Bold.ttf"; sourceTree = "<group>"; };
+		7D0490B21DED1E330008349E /* Arvo-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arvo-BoldItalic.ttf"; sourceTree = "<group>"; };
+		7D0490B31DED1E330008349E /* Arvo-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arvo-Italic.ttf"; sourceTree = "<group>"; };
+		7D0490B41DED1E330008349E /* Arvo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arvo-Regular.ttf"; sourceTree = "<group>"; };
 		7DB290E81DEBA57600C5A9E5 /* speedPoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = speedPoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DB290EB1DEBA57600C5A9E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DB290ED1DEBA57600C5A9E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +71,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D0490B01DED1E250008349E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7D0490B11DED1E330008349E /* Arvo-Bold.ttf */,
+				7D0490B21DED1E330008349E /* Arvo-BoldItalic.ttf */,
+				7D0490B31DED1E330008349E /* Arvo-Italic.ttf */,
+				7D0490B41DED1E330008349E /* Arvo-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		7DB290E11DEBA57600C5A9E5 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +121,7 @@
 		7DB290F91DEBA57600C5A9E5 /* MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
+				7D0490B01DED1E250008349E /* Resources */,
 				7DB290FA1DEBA57600C5A9E5 /* MessagesViewController.swift */,
 				7DB290FC1DEBA57600C5A9E5 /* MainInterface.storyboard */,
 				7DB290FF1DEBA57600C5A9E5 /* Assets.xcassets */,
@@ -201,8 +221,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D0490B51DED1E330008349E /* Arvo-Bold.ttf in Resources */,
+				7D0490B81DED1E330008349E /* Arvo-Regular.ttf in Resources */,
 				7DB291001DEBA57600C5A9E5 /* Assets.xcassets in Resources */,
 				7DB290FE1DEBA57600C5A9E5 /* MainInterface.storyboard in Resources */,
+				7D0490B61DED1E330008349E /* Arvo-BoldItalic.ttf in Resources */,
+				7D0490B71DED1E330008349E /* Arvo-Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
