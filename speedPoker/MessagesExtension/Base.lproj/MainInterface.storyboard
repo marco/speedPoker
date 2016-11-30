@@ -34,16 +34,16 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woodgrain" translatesAutoresizingMaskIntoConstraints="NO" id="djb-GK-GN1">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="speedPoker" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.01" translatesAutoresizingMaskIntoConstraints="NO" id="fMD-rb-V80">
-                                <rect key="frame" x="16" y="126.5" width="288" height="105.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="speedPoker" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumScaleFactor="0.01" translatesAutoresizingMaskIntoConstraints="NO" id="fMD-rb-V80">
+                                <rect key="frame" x="16" y="79.5" width="288" height="105.5"/>
                                 <fontDescription key="fontDescription" name="Arvo-BoldItalic" family="Arvo" pointSize="75"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="3" height="3"/>
                             </label>
-                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaH-v1-kna">
-                                <rect key="frame" x="96" y="232" width="128" height="64"/>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaH-v1-kna">
+                                <rect key="frame" x="54" y="184.5" width="212" height="106"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="YaH-v1-kna" secondAttribute="height" multiplier="2:1" id="KWD-dg-abj"/>
@@ -55,8 +55,8 @@
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOE-if-OuS">
-                                <rect key="frame" x="96" y="316" width="128" height="64"/>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOE-if-OuS">
+                                <rect key="frame" x="54" y="316.5" width="212" height="106"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="OOE-if-OuS" secondAttribute="height" multiplier="2:1" id="sNv-vk-4F4"/>
@@ -72,23 +72,27 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fMD-rb-V80" firstAttribute="height" secondItem="djb-GK-GN1" secondAttribute="height" multiplier="0.2" id="0A7-T8-N35"/>
-                            <constraint firstItem="OOE-if-OuS" firstAttribute="top" secondItem="YaH-v1-kna" secondAttribute="bottom" constant="20" id="56f-vh-BfD"/>
                             <constraint firstAttribute="bottom" secondItem="djb-GK-GN1" secondAttribute="bottom" id="Bag-xs-cgW"/>
-                            <constraint firstItem="YaH-v1-kna" firstAttribute="top" secondItem="fMD-rb-V80" secondAttribute="bottom" id="E9Q-Yj-ard"/>
-                            <constraint firstItem="YaH-v1-kna" firstAttribute="centerY" secondItem="djb-GK-GN1" secondAttribute="centerY" id="M6E-hx-eVl"/>
-                            <constraint firstItem="YaH-v1-kna" firstAttribute="width" secondItem="djb-GK-GN1" secondAttribute="width" multiplier="0.4" id="Nm1-lo-Mfv"/>
+                            <constraint firstItem="OOE-if-OuS" firstAttribute="centerY" secondItem="djb-GK-GN1" secondAttribute="centerY" multiplier="1.4" id="IFq-YA-d0H"/>
+                            <constraint firstItem="fMD-rb-V80" firstAttribute="centerY" secondItem="djb-GK-GN1" secondAttribute="centerY" multiplier="0.5" id="IVk-va-keL"/>
+                            <constraint firstItem="YaH-v1-kna" firstAttribute="centerY" secondItem="djb-GK-GN1" secondAttribute="centerY" multiplier="0.9" id="M6E-hx-eVl"/>
                             <constraint firstAttribute="trailing" secondItem="djb-GK-GN1" secondAttribute="trailing" id="X7K-uA-chk"/>
                             <constraint firstItem="YaH-v1-kna" firstAttribute="centerX" secondItem="djb-GK-GN1" secondAttribute="centerX" id="b6z-Sz-0Fu"/>
                             <constraint firstItem="djb-GK-GN1" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="bgD-Zo-h6x"/>
-                            <constraint firstItem="OOE-if-OuS" firstAttribute="leading" secondItem="djb-GK-GN1" secondAttribute="trailing" constant="-224" id="eBc-fT-2aX"/>
+                            <constraint firstItem="YaH-v1-kna" firstAttribute="height" secondItem="djb-GK-GN1" secondAttribute="height" multiplier="0.2" id="cFR-B2-ynv"/>
+                            <constraint firstItem="OOE-if-OuS" firstAttribute="height" secondItem="djb-GK-GN1" secondAttribute="height" multiplier="0.2" id="e5p-I9-2m3"/>
+                            <constraint firstItem="OOE-if-OuS" firstAttribute="centerX" secondItem="djb-GK-GN1" secondAttribute="centerX" id="hsu-1B-8OW"/>
                             <constraint firstItem="fMD-rb-V80" firstAttribute="width" secondItem="djb-GK-GN1" secondAttribute="width" multiplier="0.9" id="j2u-6L-Typ"/>
                             <constraint firstItem="fMD-rb-V80" firstAttribute="centerX" secondItem="djb-GK-GN1" secondAttribute="centerX" id="rOl-h4-cxd"/>
                             <constraint firstItem="djb-GK-GN1" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="top" id="us7-fA-HLr"/>
-                            <constraint firstItem="OOE-if-OuS" firstAttribute="width" secondItem="djb-GK-GN1" secondAttribute="width" multiplier="0.4" id="znu-fg-scT"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="528"/>
+                    <connections>
+                        <outlet property="learnButton" destination="OOE-if-OuS" id="gVB-0O-rr4"/>
+                        <outlet property="playButton" destination="YaH-v1-kna" id="mR3-X3-3rJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
