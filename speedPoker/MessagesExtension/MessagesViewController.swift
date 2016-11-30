@@ -67,7 +67,6 @@ class MessagesViewController: MSMessagesAppViewController {
     */
     func autoshrinkTitleLabels(of buttons: [UIButton],
             withMinumumScale minimumScale: CGFloat) throws {
-        view.layoutIfNeeded()
         for button in buttons {
             guard button.titleLabel != nil else {
                 throw AutoshrinkError.noTitleLabel(button: button)
