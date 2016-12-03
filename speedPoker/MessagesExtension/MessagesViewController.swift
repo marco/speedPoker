@@ -14,17 +14,8 @@ import Messages
 /// The root view controller that the Messages app uses.
 class MessagesViewController: MSMessagesAppViewController {
     // MARK: - Properties
-    /**
-        A `UIButton` that says "Play". When touched up inside, the
-                `playButtonTouchUpInside(sender:)` method is called.
-    */
+    /// A `UIButton` that says "Play".
     @IBOutlet var playButton: UIButton!
-
-    /**
-        A `UIButton` that says "Learn". When touched up inside, the
-                `learnButtonTouchUpInside(sender:)` method is called.
-    */
-    @IBOutlet var learnButton: UIButton!
 
     /// Errors caused when attempting to autoshrink `UILabel`s.
     enum AutoshrinkError: Error {
@@ -42,10 +33,10 @@ class MessagesViewController: MSMessagesAppViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        try! autoshrinkTitleLabels(of: [playButton, learnButton],
+        try! autoshrinkTitleLabels(of: [playButton],
                 withMinumumScale: 0.01)
 
-        roundCorners(of: [playButton, learnButton], withAmountRounded: 0.25)
+        roundCorners(of: [playButton], withAmountRounded: 0.25)
     }
 
     override func didReceiveMemoryWarning() {
