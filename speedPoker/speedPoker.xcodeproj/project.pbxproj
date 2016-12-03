@@ -57,6 +57,7 @@
 		7DB290FD1DEBA57600C5A9E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		7DB290FF1DEBA57600C5A9E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DB291011DEBA57600C5A9E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DB392631DF34D7A00A46737 /* woodgrainThumbnail.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = woodgrainThumbnail.xcf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +79,7 @@
 				7D0490B21DED1E330008349E /* Arvo-BoldItalic.ttf */,
 				7D0490B31DED1E330008349E /* Arvo-Italic.ttf */,
 				7D0490B41DED1E330008349E /* Arvo-Regular.ttf */,
+				7DB392631DF34D7A00A46737 /* woodgrainThumbnail.xcf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
