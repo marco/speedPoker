@@ -132,10 +132,14 @@ class MessagesViewController: MSMessagesAppViewController {
             return
         }
 
-        // Set the `layout` using `createMessageTemplateLayoutForNewGame()`
+        // Set the `layout` using `createMessageTemplateLayoutForNewGame()`.
         gameMessage.layout = createMessageTemplateLayoutForNewGame()
 
+        // Insert the message into the input field.
         self.activeConversation?.insert(gameMessage, completionHandler: nil)
+
+        // Go back to compact, so that the user knows what just happened.
+        self.requestPresentationStyle(MSMessagesAppPresentationStyle.compact)
     }
 
     /**
