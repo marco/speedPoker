@@ -253,7 +253,7 @@ class MessagesViewController: MSMessagesAppViewController {
     */
     func createMessageTemplateLayoutForNewGame() -> MSMessageTemplateLayout {
         let templateLayout = MSMessageTemplateLayout()
-        templateLayout.image = #imageLiteral(resourceName: "woodgrainThumbnail")
+        templateLayout.image = #imageLiteral(resourceName: "thumbnail")
         templateLayout.caption = "Let's Play Poker!"
         templateLayout.subcaption = "with speedPoker"
 

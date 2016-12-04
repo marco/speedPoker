@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -28,50 +28,43 @@
                         <viewControllerLayoutGuide type="bottom" id="n38-gi-rB5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woodgrain" translatesAutoresizingMaskIntoConstraints="NO" id="djb-GK-GN1">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="speedPoker" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumScaleFactor="0.01" translatesAutoresizingMaskIntoConstraints="NO" id="fMD-rb-V80">
-                                <rect key="frame" x="19" y="100.5" width="337.5" height="133"/>
+                                <rect key="frame" x="20.666666666666657" y="110.33333333333331" width="372.66666666666663" height="147.33333333333337"/>
                                 <fontDescription key="fontDescription" name="Arvo-BoldItalic" family="Arvo" pointSize="75"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" red="0.28554141519999998" green="0.28559523819999999" blue="0.28553432229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="3" height="3"/>
                             </label>
-                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaH-v1-kna">
-                                <rect key="frame" x="54.5" y="434" width="266" height="133"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaH-v1-kna">
+                                <rect key="frame" x="23.333333333333343" y="331.33333333333337" width="367.33333333333337" height="184.00000000000011"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="YaH-v1-kna" secondAttribute="height" multiplier="2:1" id="KWD-dg-abj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Arvo-Bold" family="Arvo" pointSize="75"/>
-                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <size key="titleShadowOffset" width="5" height="0.0"/>
                                 <state key="normal" title="Play">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="playButtonTouchUpInside:" destination="ObA-dk-sSI" eventType="touchUpInside" id="jXI-7U-huc"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.074899114668369293" green="0.13120800256729126" blue="0.29830494523048401" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="fMD-rb-V80" firstAttribute="height" secondItem="djb-GK-GN1" secondAttribute="height" multiplier="0.2" id="0A7-T8-N35"/>
-                            <constraint firstAttribute="bottom" secondItem="djb-GK-GN1" secondAttribute="bottom" id="Bag-xs-cgW"/>
-                            <constraint firstItem="fMD-rb-V80" firstAttribute="centerY" secondItem="djb-GK-GN1" secondAttribute="centerY" multiplier="0.5" id="IVk-va-keL"/>
-                            <constraint firstItem="YaH-v1-kna" firstAttribute="centerY" secondItem="djb-GK-GN1" secondAttribute="centerY" multiplier="1.5" id="M6E-hx-eVl"/>
-                            <constraint firstAttribute="trailing" secondItem="djb-GK-GN1" secondAttribute="trailing" id="X7K-uA-chk"/>
-                            <constraint firstItem="YaH-v1-kna" firstAttribute="centerX" secondItem="djb-GK-GN1" secondAttribute="centerX" id="b6z-Sz-0Fu"/>
-                            <constraint firstItem="djb-GK-GN1" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="bgD-Zo-h6x"/>
-                            <constraint firstItem="YaH-v1-kna" firstAttribute="height" secondItem="djb-GK-GN1" secondAttribute="height" multiplier="0.2" id="cFR-B2-ynv"/>
-                            <constraint firstItem="fMD-rb-V80" firstAttribute="width" secondItem="djb-GK-GN1" secondAttribute="width" multiplier="0.9" id="j2u-6L-Typ"/>
-                            <constraint firstItem="fMD-rb-V80" firstAttribute="centerX" secondItem="djb-GK-GN1" secondAttribute="centerX" id="rOl-h4-cxd"/>
-                            <constraint firstItem="djb-GK-GN1" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="top" id="us7-fA-HLr"/>
+                            <constraint firstItem="YaH-v1-kna" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="centerY" multiplier="0.9" id="2wD-SK-vnS"/>
+                            <constraint firstItem="fMD-rb-V80" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="6yl-vh-zHl"/>
+                            <constraint firstItem="fMD-rb-V80" firstAttribute="height" secondItem="zMn-AG-sqS" secondAttribute="height" multiplier="0.2" id="Fa2-au-50H"/>
+                            <constraint firstItem="fMD-rb-V80" firstAttribute="bottom" secondItem="zMn-AG-sqS" secondAttribute="centerY" multiplier="0.7" id="Fcx-qy-Zof"/>
+                            <constraint firstItem="YaH-v1-kna" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="HeE-mV-1KV"/>
+                            <constraint firstItem="fMD-rb-V80" firstAttribute="width" secondItem="zMn-AG-sqS" secondAttribute="width" multiplier="0.9" id="azN-fb-amn"/>
+                            <constraint firstItem="YaH-v1-kna" firstAttribute="height" secondItem="zMn-AG-sqS" secondAttribute="height" multiplier="0.25" id="kT3-n6-ZQO"/>
                         </constraints>
                     </view>
                     <connections>
@@ -83,7 +76,4 @@
             <point key="canvasLocation" x="137.59999999999999" y="136.73163418290855"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="woodgrain" width="1920" height="1920"/>
-    </resources>
 </document>
