@@ -108,7 +108,7 @@ class MessagesViewController: MSMessagesAppViewController {
     }
 
     // MARK: - Game Handling
-    /// Create a new game message, and then send it out.
+    /// Creates a new game message, and then sends it out.
     func startNewGame() {
         /// The message to be sent to the other user.
         let gameMessage = MSMessage.init()
